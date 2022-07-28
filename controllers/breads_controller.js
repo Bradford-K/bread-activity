@@ -36,7 +36,7 @@ breads.get('/new', (req, res) => {
 breads.get('/:arrayIndex/edit', (req, res) => {
   res.render('edit', {
     bread: Bread[req.params.arrayIndex],
-    index: [req.params.arrayIndex]
+    index: req.params.arrayIndex
   })
 })
 
